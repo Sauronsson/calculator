@@ -1,0 +1,36 @@
+button {
+    width: 5em;
+    height: 5em;
+}
+
+input {
+    font-size: 3em;
+}
+
+#calculator {
+    /* Calculator Specific */
+    margin:5em;
+    border: 5px solid;
+    padding: 2em;
+
+    /* Inside Element Display */
+    display:flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    align-content: center;
+    gap: 2em;
+    width: 20em;
+}
+
+#buttons {
+    display:flex;
+    flex: 1 0 auto;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.button-row {
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+}

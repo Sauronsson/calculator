@@ -1,6 +1,7 @@
 button {
     width: 5em;
     height: 5em;
+    flex:initial;
 }
 
 input {
@@ -12,25 +13,28 @@ input {
     margin:5em;
     border: 5px solid;
     padding: 2em;
+    width: 300px;
 
     /* Inside Element Display */
     display:flex;
-    flex: 1 0 auto;
+    flex: auto;
     flex-direction: column;
     align-content: center;
     gap: 2em;
-    width: 20em;
 }
 
 #buttons {
     display:flex;
-    flex: 1 0 auto;
+    flex: auto;
     justify-content:space-between;
     flex-wrap: wrap;
+    gap:1em;
 }
 
 .button-row {
     display:flex;
+    flex:1;
     width:100%;
     justify-content: space-around;
+    gap:1em;
 }

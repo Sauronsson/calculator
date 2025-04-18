@@ -27,6 +27,11 @@ const application = {
                 result = left * right
                 break
             case '/':
+                if(right === 0){
+                    application.functions['clear']()
+                    alert('Don\'t divide by 0!')
+                    return
+                }
                 result = left / right
                 break
         }
@@ -45,8 +50,6 @@ const application = {
     },
     functions : {
         'addNumber' : (number) => {
-            if(number == 0 && !application.currentValue)
-                return
             if(application.isCalculated)
                 application.currentValue = ''
                 application.isCalculated = false

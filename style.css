@@ -2,10 +2,12 @@ button {
     flex: 1 1 2em;
     margin: 3px;
     font-size: clamp(1em, 6vw, 5em);
+    
 }
 
 input {
     flex: 1 1 auto;
+    direction: rtl;
     font-size: clamp(1em, 6vw, 5em);
 }
 

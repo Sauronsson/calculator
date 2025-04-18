@@ -8,13 +8,17 @@ button {
 input {
     flex: 1 1 auto;
     direction: rtl;
-    font-size: clamp(1em, 6vw, 5em);
+    font-size: clamp(3em, 6vw, 7em);
 }
 
 .button-row {
     display:flex;
     flex: 1 1 auto;
     justify-content: space-around;
+}
+
+#clear {
+    flex: 0.33 0.33 auto;
 }
 
 body, html {

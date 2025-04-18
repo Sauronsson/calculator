@@ -1,40 +1,30 @@
 button {
-    width: 5em;
-    height: 5em;
-    flex:initial;
+    flex: 1 1 2em;
+    margin: 3px;
+    font-size: clamp(1em, 6vw, 5em);
 }
 
 input {
-    font-size: 3em;
-}
-
-#calculator {
-    /* Calculator Specific */
-    margin:5em;
-    border: 5px solid;
-    padding: 2em;
-    width: 300px;
-
-    /* Inside Element Display */
-    display:flex;
-    flex: auto;
-    flex-direction: column;
-    align-content: center;
-    gap: 2em;
-}
-
-#buttons {
-    display:flex;
-    flex: auto;
-    justify-content:space-between;
-    flex-wrap: wrap;
-    gap:1em;
+    flex: 1 1 auto;
+    font-size: clamp(1em, 6vw, 5em);
 }
 
 .button-row {
     display:flex;
-    flex:1;
-    width:100%;
+    flex: 1 1 auto;
     justify-content: space-around;
-    gap:1em;
+}
+
+body, html {
+    display:flex;
+    height:100%;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.calculator {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
 }

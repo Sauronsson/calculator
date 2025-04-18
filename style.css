@@ -7,8 +7,7 @@ button {
 
 input {
     flex: 1 1 auto;
-    direction: rtl;
-    font-size: clamp(3em, 6vw, 7em);
+    font-size: clamp(2em, 10vw, 7em);
 }
 
 .button-row {
